@@ -1,0 +1,62 @@
+=Guardia zetas 2 
+#Location 1
+$$999
+/Día 
++1pm-6am
+!Lun - Vie
+*Guadia para los zetas.
+?Centro comunitario, la alianza, Monterrey, NL, México
+
+=Vendedor de criko 2
+#Location 2
+$$998
+/Noche
++2am-5pm
+!Lun-Dom
+*Vendedor para criko, debe tener donde vivir.
+?Jardin de niños, almira sierra becerra, la alianza, Monterrey
+
+=Tableador 2
+#Location 3
+$$997
+/Tarde
++6pm-4am
+!Lun-Sab
+*Preferente que no se canse al tablear, traer tabla.
+?Esc. Primaria beatrilz idalia teviño casso, la alianza, Monterrey
+
+=Mutilador 2
+#Location 4
+$$996
+/Noche
++10pm-3pm
+!Lun-Vie
+*Rápido, que sepa hacer buenos cortes.
+?Esc. Sec. 86, la alianza, Monterrey, NL, México
+
+=Secuestrador (con experiencia) 2
+#Location 5
+$$995
+/Día 
++6am-8am
+!Lun-Dom
+*Agíl, que no se le bajen de la troca.
+?Soriana, solidaridad, Monterrey, NL, México
+
+=Secuestrador(experiencia no necesaria) 2
+#Location 6
+$$994
+/Día 
++6am-8am
+!Lun-Dom
+*Que sepa cuidar que las víctimas no se bajen de la troca.
+?Little Caesars, solidaridad, Monterrey, NL, México
+
+=Traficante (Organos) 2
+#Location 7
+$$993
+/Día 
++12pm-9am
+!Lun-Vie
+*Que sepa los hrarios de la escuela.
+?Smart, Lincoln, Monterrey, NL, México
