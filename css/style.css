@@ -10,20 +10,16 @@
   font-family: "limpieza";
   src: url(../fonts/limp.ttf);
 }
-/*
 body {
+  background-image: url(../img/white-waves.webp);
+  /*
+      background-color: #e5e5f7;
+      //opacity: 0.8;
+      background-size: 10px 10px;
+      background-image: repeating-linear-gradient(45deg, rgba(167,171,170,1) 0, rgba(167,171,170,1) 1px, rgba(87,153,205,1) 0, rgba(87,153,205,1) 50%);
+  */
+}
 
-    background-color: #e5e5f7;
-    //opacity: 0.8;
-    background-size: 10px 10px;
-    background-image: repeating-linear-gradient(45deg, rgba(167,171,170,1) 0, rgba(167,171,170,1) 1px, rgba(87,153,205,1) 0, rgba(87,153,205,1) 50%);
-
-    //background: rgb(87,153,205);
-    //background: linear-gradient(90deg, rgba(87,153,205,1) 0%, rgba(167,171,170,1) 100%);
-    //background-attachment: fixed;
-    //background-repeat: no-repeat;
-    //background-size: cover;
-} */
 .navbar-brand {
   font-family: "Signika Negative", sans-serif;
   text-align: center;
@@ -42,26 +38,45 @@ h1 {
 }
 
 .img-head {
-  align-items: center;
   background-image: url(../img/test.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 150px 50px;
-  text-align: center;
+  padding: 274px 50px 200px 50px;
+  text-align: left;
   width: 100%;
 }
 .img-head h1 {
-  color: #BABDB6;
+  color: #136c77;
   font-size: 2rem;
-  padding: 40px;
+  margin: 0;
+  padding: 0;
 }
 .img-head p {
-  color: #fff;
+  color: #212429;
   font-size: 1rem;
+  margin: 0;
   width: 70%;
+}
+
+.vacTitle {
+  background-color: #fff;
+  border-radius: 225px 5px 225px 80px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 20%;
+}
+
+.vacdeTitle {
+  background-color: #fff;
+  border-radius: 225px 5px 225px 80px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 25%;
 }
 
 section {
@@ -71,6 +86,20 @@ section {
   text-align: center;
   width: 100%;
 }
+section .descr {
+  background-color: #fff;
+  border-radius: 225px 5px 225px 80px;
+  padding: 30px;
+  width: 50%;
+}
+section .descr h1 {
+  margin: 0;
+  padding: 0;
+}
+section .descr p {
+  margin: 0;
+  padding: 0;
+}
 section .tipo {
   align-items: center;
   display: flex;
@@ -79,15 +108,16 @@ section .tipo {
 }
 section .vac {
   /* align-items: center;
-  display: flex;
-  justify-content: center;*/
+      display: flex;
+      justify-content: center;*/
   width: 60%;
 }
 section .vac .seg {
-  background-image: url(../img/seg.jpeg);
+  background-image: url(../img/seg.webp);
+  background-position: center;
 }
 section .vac .seg p {
-  color: #A7ABAA;
+  color: #a7abaa;
   font-family: "seguridad", sans-serif;
   font-size: 1.6rem;
 }
@@ -95,10 +125,11 @@ section .vac .seg .btn-vac {
   background-color: rgba(167, 171, 170, 0.6);
 }
 section .vac .limp {
-  background-image: url(../img/limp.jpeg);
+  background-image: url(../img/limp.webp);
+  background-position: center;
 }
 section .vac .limp p {
-  color: #5799CD;
+  color: #5799cd;
   font-family: "limpieza", sans-serif;
   font-size: 1.9rem;
 }
@@ -156,8 +187,8 @@ section .vac .vaccau .btn-vac {
   padding: 5px;
 }
 .tabla .table .btn-ver {
-  background-color: #018EB1;
-  border: 1px solid #015B86;
+  background-color: #018eb1;
+  border: 1px solid #015b86;
   border-radius: 5px;
   color: #fff;
   font-family: "Dhurjati", sans-serif;
@@ -219,7 +250,7 @@ section .vac .vaccau .btn-vac {
   width: 100%;
 }
 .vacCard .wsp-btn .btnwsp {
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 0 0 10px 10px;
   color: #fff;
   font-family: "Dhurjati", sans-serif;
