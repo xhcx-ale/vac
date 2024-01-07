@@ -1,12 +1,24 @@
 var theme = localStorage.getItem("theme");
 $("body").attr("data-bs-theme", theme);
-$("#light").on("click", function () {
+if ( theme == 'dark' ) {
+  $('body').removeClass('light');
+  $('body').addClass('dark');
+} else {
+  $('body').removeClass('dark');
+  $('body').addClass('light');
+}
+
+$("#light").click( () => {
   $("body").attr("data-bs-theme", "light");
+  $('body').removeClass('dark');
+  $('body').addClass('light');
   localStorage.setItem("theme", "light");
 });
 
-$("#dark").on("click", function () {
-  $("body").attr("data-bs-theme", "dark");
+$('#dark').click( () => {
+  $('body').attr('data-bs-theme', 'dark');
+  $('body').removeClass('light');
+  $('body').addClass('dark');
   localStorage.setItem("theme", "dark");
 });
 var list = localStorage.getItem("list");
