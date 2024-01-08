@@ -1,22 +1,22 @@
-var chosInd = localStorage.getItem("index"),
-  nombre = localStorage.getItem("nombre"),
-  turno = localStorage.getItem("turno"),
-  horario = localStorage.getItem("horario"),
-  dia = localStorage.getItem("dia"),
-  salario = localStorage.getItem("salario"),
-  descripcion = localStorage.getItem("desc"),
-  direccion = localStorage.getItem("direccion");
+var chosInd = localStorage.getItem('index'),
+  nombre = localStorage.getItem('nombre'),
+  turno = localStorage.getItem('turno'),
+  horario = localStorage.getItem('horario'),
+  dia = localStorage.getItem('dia'),
+  salario = localStorage.getItem('salario'),
+  descripcion = localStorage.getItem('desc'),
+  direccion = localStorage.getItem('direccion');
 
-$("#nmVac").text(nombre);
-$("#vacTur").text(turno);
-$("#vacHr").text(horario);
-$("#vacDia").text(dia);
-$("#vacSal").text(salario);
-$("#vacDesc").text(descripcion);
-$("#vacDir").text(direccion);
+$('#nmVac').text(nombre);
+$('#vacTur').text(turno);
+$('#vacHr').text(horario);
+$('#vacDia').text(dia);
+$('#vacSal').text(salario);
+$('#vacDesc').text(descripcion);
+$('#vacDir').text(direccion);
 
-var theme = localStorage.getItem("theme");
-$("body").attr("data-bs-theme", theme);
+var theme = localStorage.getItem('theme');
+$('body').attr('data-bs-theme', theme);
 if ( theme == 'dark' ) {
   $('body').removeClass('light');
   $('body').addClass('dark');
@@ -25,49 +25,49 @@ if ( theme == 'dark' ) {
   $('body').addClass('light');
 }
 
-$("#light").click( () => {
-  $("body").attr("data-bs-theme", "light");
+$('#light').click( () => {
+  $('body').attr('data-bs-theme', 'light');
   $('body').removeClass('dark');
   $('body').addClass('light');
-  localStorage.setItem("theme", "light");
+  localStorage.setItem('theme', 'light');
 });
 
 $('#dark').click( () => {
   $('body').attr('data-bs-theme', 'dark');
   $('body').removeClass('light');
   $('body').addClass('dark');
-  localStorage.setItem("theme", "dark");
+  localStorage.setItem('theme', 'dark');
 });
 
-$("#wsp").on("click", function () {
+$('#wsp').click( () => {
   var msg = `Hola, me interesa la vacante ${ nombre }, turno ${ turno }, en ${ direccion}.`;
-  location.href = "https://wa.me/528131715194/?text=" + msg;
+  location.href = `https://wa.me/528131715194/?text=${ msg }`;
 });
 
 $(document).ready(function () {
   var divMap = redrawMap();
-  $("#mapa").append(divMap);
+  $('#mapa').append(divMap);
 });
 
-var title = "Test";
+var title = 'Test';
 var street = direccion;
-var coord = "";
-var mType = "";
-var mapWidth = 100 + "%";
+var coord = '';
+var mType = '';
+var mapWidth = 100 + '%';
 var mapHeight = 400;
 var mapZoom = 14;
 
 function redrawMap() {
   var iframeUrl = generateMapUrl();
   var finalCode = getFinalWidgetCode();
-  var finc = '<div style="width: 100%">' + finalCode + "</div>";
+  var finc = `<div style="width: 100%">${ finalCode }</div>`;
   return finc;
 }
 
 function getFinalWidgetCode() {
   var $iframe = getIFrame();
   $iframe.append(getLinkBaitScript());
-  var finalWidgetCode = $iframe.wrap("<div />").parent().html();
+  var finalWidgetCode = $iframe.wrap('<div />').parent().html();
   return finalWidgetCode;
 }
 
@@ -88,13 +88,9 @@ function getLinkBaitScript() {
 
   var texte = new Array(z);
   texte[0] = "Sat Navs";
-
   texte[1] = "GPS devices";
-
   texte[2] = "Car GPS";
-
   texte[3] = "Car Navigation Systems";
-
   texte[4] = "GPS car tracker";
 
   var jetzt = new Date();
