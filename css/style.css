@@ -19,9 +19,15 @@
 .dark {
   background-image: url(../img/prism.png);
 }
+.dark .img-head .p-title, .dark .img-head .p-text {
+  background-color: rgba(43, 48, 53, 0.5);
+}
 
 .light {
   background-image: url(../img/white-waves.webp);
+}
+.light .img-head .p-title, .light .img-head .p-text {
+  background-color: rgba(248, 249, 250, 0.5);
 }
 
 .navbar-brand {
@@ -47,16 +53,13 @@
   width: 100%;
 }
 .img-head .p-title {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #136c77;
+  color: #5799cd;
   font-size: 1.8rem;
   margin: 0;
   padding: 15px 0 0 15px;
   width: 70%;
 }
 .img-head .p-text {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #212429;
   font-size: 1rem;
   margin: 0;
   padding: 0 0 15px 15px;
@@ -125,7 +128,7 @@ section .vac .limp {
   background-position: center;
 }
 section .vac .limp p {
-  color: #5799cd;
+  color: #76b5e6;
   font-family: "limpieza", sans-serif;
   font-size: 1.9rem;
 }
