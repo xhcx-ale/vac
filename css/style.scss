@@ -96,14 +96,13 @@
 .vacTitle {
    // background-color: #fff;
     border-radius: 225px 5px 225px 80px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 35px auto;
     padding: 0;
     text-align: center;
    // width: 20%;
     h1 {
       font-size: 1.5rem;
-      padding: 0 20px;
+      padding: 0 30px;
     }
 }
 
@@ -117,7 +116,6 @@ section {
   .descr {
    // background-color: #fff;
     border-radius: 5px 5px 225px 225px;
-    margin-top: 20px;
     padding: 30px;
     width: 50%;
     h1 {
@@ -141,6 +139,7 @@ section {
     /* align-items: center;
         display: flex;
         justify-content: center;*/
+        margin-bottom: 100px;
     width: 60%;
     .seg {
       background-image: url(../img/seg.webp);
@@ -200,8 +199,8 @@ section {
 }
 .tabla {
   box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
-  margin: 10px auto;
-  margin-top: 18px;
+  margin: 0 auto;
+  margin-bottom: 100px;
   padding: 40px;
   width: 70%;
 
@@ -242,8 +241,8 @@ section {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  margin: 5px auto;
-  margin-top: 18px;
+  margin: 0 auto;
+  margin-bottom: 100px;
   text-align: center;
   width: 80%;
   .vacName {
