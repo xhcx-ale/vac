@@ -40,14 +40,7 @@ $('#dark').click( () => {
 });
 
 $("#wsp").on("click", function () {
-  var msg =
-    "Hola, me interesa la vacante " +
-    nombre +
-    ", turno " +
-    turno +
-    ", en " +
-    direccion +
-    ".";
+  var msg = `Hola, me interesa la vacante ${ nombre }, turno ${ turno }, en ${ direccion}.`;
   location.href = "https://wa.me/528131715194/?text=" + msg;
 });
 
@@ -129,21 +122,13 @@ function generateMapUrl() {
 
   var urlParams = {
     width: mapWidth,
-
     height: mapHeight,
-
     hl: "es",
-
     q: query,
-
     t: mType,
-
     z: mapZoom,
-
     ie: "UTF8",
-
     iwloc: "B",
-
     output: "embed",
   };
 

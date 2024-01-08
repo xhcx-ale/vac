@@ -68,7 +68,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  //justify-content: center;
+  justify-content: center;
   padding: 274px 50px 200px 50px;
   text-align: left;
   width: 100%;
@@ -79,7 +79,7 @@
     color: #5799cd;
     font-size: 1.8rem;
     margin: 0;
-    padding: 15px 0 0 15px;
+    padding: 20px 20px 0 20px;
     width: 70%;
   }
 
@@ -88,7 +88,7 @@
     //color: #212429;
     font-size: 1rem;
     margin: 0;
-    padding: 0 0 15px 15px;
+    padding: 0 20px 20px 20px;
     width: 70%;
   }
 }
@@ -324,15 +324,19 @@ footer {
     text-align: center;
     .p-title {
       font-size: 1.3rem;
+      padding: 15px 15px 0 15px;
       width: 100%;
     }
     .p-text {
+      padding: 0 15px 15px 15px;
       width: 100%;
     }
   }
   section {
     .descr {
-      width: 90%;
+      border-radius: 5px 5px 75px 75px;
+      padding: 25px 15px;
+      width: 100%;
     }
     .vac {
       width: 100%;
