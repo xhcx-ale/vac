@@ -1,11 +1,19 @@
-var chosInd = localStorage.getItem('index'),
-  nombre = localStorage.getItem('nombre'),
-  turno = localStorage.getItem('turno'),
-  horario = localStorage.getItem('horario'),
-  dia = localStorage.getItem('dia'),
-  salario = localStorage.getItem('salario'),
-  descripcion = localStorage.getItem('desc'),
-  direccion = localStorage.getItem('direccion');
+$(document).ready(() => {
+const chosInd = localStorage.getItem('index'),
+      nombre = localStorage.getItem('nombre'),
+      turno = localStorage.getItem('turno'),
+      horario = localStorage.getItem('horario'),
+      dia = localStorage.getItem('dia'),
+      salario = localStorage.getItem('salario'),
+      descripcion = localStorage.getItem('desc'),
+      direccion = localStorage.getItem('direccion'),
+      title = 'Test',
+      street = direccion,
+      coord = '',
+      mType = '',
+      mapWidth = 100 + '%',
+      mapHeight = 400,
+      mapZoom = 14;
 
 $('#nmVac').text(nombre);
 $('#vacTur').text(turno);
@@ -44,18 +52,8 @@ $('#wsp').click( () => {
   location.href = `https://wa.me/528131715194/?text=${ msg }`;
 });
 
-$(document).ready(function () {
-  var divMap = redrawMap();
-  $('#mapa').append(divMap);
-});
-
-var title = 'Test';
-var street = direccion;
-var coord = '';
-var mType = '';
-var mapWidth = 100 + '%';
-var mapHeight = 400;
-var mapZoom = 14;
+const divMap = redrawMap();
+$('#mapa').append(divMap);
 
 function redrawMap() {
   var iframeUrl = generateMapUrl();
@@ -138,3 +136,4 @@ function generateMapUrl() {
   return fullUrl;
 }
 redrawMap();
+});
